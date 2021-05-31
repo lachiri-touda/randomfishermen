@@ -1,10 +1,3 @@
-Lorsque vous lancez cette application pour la première fois, veuillez tout d'abord vous rendre à cette adresse :
-
-http://localhost:8080/SourceCodes/install.php
-
-Puis vous pouvez accéder à l'application Debster en cliquant sur "Démarrer", on en vous rendant à l'adresse suivante :
-
-http://localhost:8080/SourceCodes/accueil.php
 
 
 Dans le dossier it103-2020-randomfishermen se trouvent les fichiers permettant de faire fonctionner debster (entre autres) organisés comme suit :
@@ -13,9 +6,9 @@ Dans le dossier it103-2020-randomfishermen se trouvent les fichiers permettant d
 
 /Amis contient les scripts php permettant de faire fonctionner la partie "Amis" du projet, principalement gérée par Léonard Rizzo
 
-/comptes contient les scripts de gestion de comptes (connexion, déconnexion, enregistrement...) principalement gérés pas Mohammed Touda-Lachiri
+/comptes contient les scripts de gestion de comptes (connexion, déconnexion, enregistrement...) 
 
-/transactions contient les scripts de gestions de transactions principalement gérés pas David Renouf
+/transactions contient les scripts de gestions de transactions principalement 
 
 /CRandDocumentation contient les comptes-rendus du projet ainsi que la documentation dans sa version finale
 
