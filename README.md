@@ -15,3 +15,6 @@ Dans le dossier it103-2020-randomfishermen se trouvent les fichiers permettant d
 /database_initialisation contient les différentes étapes d'automatisation de création et de remplissage de la base de données
 
 /SourceCode rassemble tous les codes finaux utilisés dans le projet
+
+Technologies utilisées: PHP, HTML, CSS, JAVASCRIPT, MySQL.
+ 
