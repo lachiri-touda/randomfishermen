@@ -1,0 +1,166 @@
+Scénarios de test :
+
+1) Test items
+
+
+→ affichage de la lise d'amis
+→ changement de page de la liste d'amis
+→ affichage des caractéristiques d'un amis
+→ affichage du solde
+→ affichage des transactions avec un ami
+→ Enregistrement
+→ Connexion
+→ consultation des transactions
+→ consultation l'historique
+→ modification d'une transaction
+→ saisie d'une transaction simple
+→ saisie d'une transaction de groupe
+→ fermeture d'une transaction
+→ajout et suppression d'un ami
+
+
+2) Procédures
+
+
+ID du test: 1
+Nom : Connexion
+Date : 15/05
+But du test : S'assurer que seuls les utilisateurs enregistrés puissent se connecter
+Fonction du test : Vérifier que seule une combination valide nom d'utilisateur/mot de passe permet de se connecter.
+Commandes entrées : Un nom d'utilisateur alphanumérique et un mot de passe alphanumérique 
+Résultat attendu : Si la combinaison est valide, il est redirigé vers la page d'accueil etl'authentification est valable pour une durée maximale d’une heure.
+Si aucun nom d'utilisateur et/ou mot de passe n'ont été rentrés, l'utilisateur est prié de rentrer les 2.
+Si la combinaison est invalide, un message précise que la combinaison est invalide.
+
+
+ID du test: 2
+Nom : Enregistrement
+Date : 
+But du test : S'assurer qu'il est possible de s'enregistrer .
+Fonction du test : vérifier que une combination valide (nom/prenom/email/mot de passe/date de naissance/pseudo) permet de s'enregistrer(l'insertion des données dans la table "UTILISATEURS" )
+Commandes entrées : Un nom  alphanumérique ,um prénom alphanumérique ,un email se forme("pp@pp.ff") ,un mot de passe alphanumérique ,date de naissance("jj/mm/aaaa")  ,pseudo alphanumérique.
+Résultat attendu : Si la combinaison est valide, il est redirigé vers une page que vous informe que l'enregistrement a été bien réussite .
+Si l'un des champs n'était pas rempli ou la valeur saisie ne respecte pas son énorme , l'enrengistrant  est prié de le remplir  ou de changer la valeur saisie  .
+Si la combinaison est invalide (email ou mot de passe déjà existe dans la base de données), un message d'erreur précise que la combinaison est invalide.
+
+
+ID du test: 3
+Nom : Navigation est ce vraiment nécessaire ?
+Date :
+But du test : Vérifier que la navigation sur le site est possible
+Fonctions du test : Vérifier que les changements de pages sont fonctionnels
+Commande entrées : Cliquer sur les différents “onglets”
+Résultats attendus : Changement de page avec conservation des information de l'utilisateur authentifié
+
+
+ID du test: 4
+Nom : Ajout d'un ami
+Date :
+But du test : S'assurer qu'il est possible d'ajouter un ami
+Fonctions du test : Vérifier que seul un utilisateur enregistré, différent de l'utilisateur authentifié et de ses amis, peut être ajouté à l'aide de son pseudo ou adresse mail
+Commande entrées : Adresse mail ou Nom d'utilisateur alphanumerique
+Résultats attendus : Si l'utilisateur est valide selon les critères précédents, il est ajouté à la liste d'amis et ses détails sont affichés
+Si l'utilisateur existe mais est déjà dans la base d'amis, un message d'erreur indique “vous êtes déjà amis”
+Si l'utilisateur n'est pas identifé grâce à l'entrée, un message d'erreur indique que l'utilisateur n'existe pas.
+
+
+ID du test: 5
+Nom : Page d'accueil
+Date :
+But du test :s'assurer que les informations et le solde d'utilisateur s'affichent bien dans l'accueil.
+Fonctions du test :vérifier la mise à jour du solde dans le cas  où une transaction a été ajoutée.
+Commande entrées : ajout d'une transaction.
+Résultats attendus :l'affichage des informations d'utilisateur et la mise à jour de son solde.
+
+
+ID du test: 6
+Nom : consultation des transactions
+Date : 
+But du test : S'assurer que seul l’utilisateur puisse consulter ses transactions
+Fonction du test : Vérifier que seule les transactions en lien avec l’utilisateur apparaissent
+Commandes entrées :  X 
+Résultat attendu : Toutes les transactions ouvertes en lien avec l’utilisateur apparaissent 
+
+
+ID du test: 7
+Nom : consultation de l’historique
+Date : 
+But du test : S'assurer que seul l’utilisateur puisse consulter son historique
+Fonction du test : Vérifier que seule les transactions en lien avec l’utilisateur apparaissent
+Commandes entrées :  X 
+Résultat attendu : Toutes les transactions closes en lien avec l’utilisateur apparaissent 
+
+
+ID du test: 8
+Nom : modification d’une transaction
+Date : 
+But du test : S'assurer que seul l’utilisateur modifier une de ses transactions
+Fonction du test : Vérifier la transaction peut être modifier par l’utilisateur concerné
+Commandes entrées :  Appuie sur le bouton « Modifier » correspondant
+Résultat attendu : La transaction réapparaît en étant modifiée 
+
+
+ID du test: 9
+Nom : saisie d’une transaction simple
+Date : 
+But du test : S'assurer que seul l’utilisateur puisse créer une transaction simple
+Fonction du test : Vérifier que la transaction est bien ajouté à la base de données
+Commandes entrées :  Créer une transaction simple
+Résultat attendu : La transaction est créée et apparaît dans les transactions de l’utilisateur
+
+
+ID du test: 10
+Nom : saisie d’une transaction de groupe
+Date : 
+But du test : S'assurer que seul l’utilisateur puisse créer une transaction groupe
+Fonction du test : Vérifier que les transactions sont bien ajoutées à la base de données
+Commandes entrées :  Créer une transaction de groupe
+Résultat attendu : Les transactions sont créées et apparaissent dans les transactions de l’utilisateur
+
+
+ID du test: 11
+Nom : fermeture d’une transaction
+Date : 
+But du test : S'assurer que seul l’utilisateur fermer une de ses transactions
+Fonction du test : Vérifier la transaction peut être fermer par l’utilisateur concerné
+Commandes entrées :  Appuie sur le bouton « Supprimer » où « Clôturer » correspondant
+Résultat attendu : La transaction apparaît dans l’historique comme fermer 
+
+ID du test: 12
+Nom : suppression d'un ami
+Date :
+But du test : s'assurer que la suppretion d'une relation d'amitié est possible
+fonction du test : vérifier que la relation d'amitié dans les deux sens a bien été supprimée
+Commande entrées : sélectionner l'ami désiré en appuyant sur son nom dans le carnet d'amis puis appuyer sur le bouton "supprimer l'ami", visible seulment si le solde est à 0
+Résultats attendus : suppression de l'ami du carnet d'ami et affichage de message de confirmation
+
+ID du test: 13
+Nom : affichage des transactions avec un ami
+Date :
+But du test : vérifier que les transactions sont bien affichées dans le profil de l'ami sélectionné
+fonction du test : vérifier que les transactions sont toutes correctement affichées
+commande entrées : sélection de l'ami en cliquant sur son nom dans le carnet d'amis, puis sélection du mode d'affichage avec les boutons transactions en cours/toutes les transactions
+résultats attendues : les informations importantes des transactions sont affichées, et elle son grisées si elles ont été annulées
+
+ID du test: 14
+Nom : Déconnexion
+Date : 15/05 (ok)
+But du test : il est possible de se déconnecter depuis tout le site
+fonctions : vérifier qu'il est possible de se connecter quelle que soit la page actuelle si le bouton "se déconnecter" est visible
+commandes entrées : cliquer sur le bouton "se déconnecter"
+résultats attendus : retour à la page de connexion
+
+ID du test: 15
+Nom : Carnet d'amis
+Date : (15/05) pas trop ok
+But du test : vérifier que le carnet d'amis fonctionne correctement
+fonctions : vérifier que les informations sur un amis sont toutes bien affichées, qu'il est possible de naviguer dans ce carnet et que tous les amis sont affichés
+commandes entrées : cliquer sur les noms d'amis afin d'afficher les informations les concernant
+résultats attendus : l'affichage des amis 
+
+
+
+
+
+
+

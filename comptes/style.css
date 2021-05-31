@@ -1,0 +1,74 @@
+.bdy{
+
+background-color:#F5F5F5;
+
+}
+
+.cl0
+{
+
+   width: 450px;
+  background-color:white;
+  line-height:1px;
+   padding: 50px;
+   margin-top:  100px;
+   margin-left: 400px;/* Marge extérieure de 50px */
+   margin-bottom: : 300px;
+   margin-right: 300px;
+}
+
+.cl2
+{
+  line-height:15px;
+
+  font-size: 75px;
+}
+.cl3
+{
+   font-size: 14px;
+   line-height:20px;
+}
+.cl4
+{
+   font-size: 14px;
+   line-height:20px;
+   text-align:center;
+   margin-left: 100px;
+}
+
+
+.cl6
+{
+margin-left: 10px;
+}
+
+.cl8
+{
+  color:black;
+    padding: 10px;
+    text-align:center;
+    font-size: 50px;
+    line-height:5px;
+}
+
+.cl9
+{
+  line-height:35px;
+  padding-left: 100px;
+}
+.cl10
+{
+  margin-left: 90px;
+}
+.cl11
+{ line-height:80px;
+  padding-left: 40px;
+}
+
+.erreur
+{ 
+   font-size: 14px ;
+  color: red;
+   line-height: 5px;
+   
+}

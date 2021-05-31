@@ -1,0 +1,62 @@
+
+CREATE TABLE UTILISATEURS (
+	ID INT PRIMARY KEY AUTO_INCREMENT,
+	Prenom VARCHAR(220),
+	Nom VARCHAR(220),
+	Date date,
+	Mail VARCHAR(220),
+	Pseudo VARCHAR(220),
+	Password VARCHAR(220)
+);
+
+CREATE TABLE AMIS (
+	ID_USER INT,
+	ID_AMI INT
+);
+
+CREATE TABLE TRANSACTIONS(
+	ID_TRANSACTION INT PRIMARY KEY AUTO_INCREMENT,
+	etat BOOL,
+	date_ouverture date,
+	date_fermeture date,
+	montant INT,
+	id_paye INT,
+	id_recoit INT,
+	commentaire text,
+	fermeture text
+);
+
+
+
+
+
+INSERT INTO `UTILISATEURS` (`ID`, `Prenom`, `Nom`, `Date`, `Mail`, `Pseudo`,`Password`) VALUES ('1', 'Léonard', 'Rizzo', '2020-04-01', 'leonard@rizzo.fr', 'Metamaus','CHAT'); 
+
+INSERT INTO `UTILISATEURS` (`ID`, `Prenom`, `Nom`, `Date`, `Mail`, `Pseudo`,`Password`) VALUES ('2', 'David', 'Renouf', '2019-04-03', 'david@renouf.fr', 'ZeBest','CHAT'); 
+
+INSERT INTO `UTILISATEURS` (`ID`, `Prenom`, `Nom`, `Date`, `Mail`, `Pseudo`,`Password`) VALUES ('3', 'Mohammed', 'Touda-Lachiri', '2020-01-18', 'mohammed@touda.ma', 'ZeKing','CHAT'); 
+
+INSERT INTO `UTILISATEURS` (`ID`, `Prenom`, `Nom`, `Date`, `Mail`, `Pseudo`,`Password`) VALUES ('4', 'Nico', 'Stm', '2020-01-18', 'nico@stm.fr', 'MartinFourcade','CHAT'); 
+
+
+
+INSERT INTO `AMIS` (`ID_USER`, `ID_AMI`) VALUES ('1','2'); 
+
+INSERT INTO `AMIS` (`ID_USER`, `ID_AMI`) VALUES ('2','1');
+
+INSERT INTO `AMIS` (`ID_USER`, `ID_AMI`) VALUES ('2','3');
+
+INSERT INTO `AMIS` (`ID_USER`, `ID_AMI`) VALUES ('3','2');
+
+INSERT INTO `AMIS` (`ID_USER`, `ID_AMI`) VALUES ('1','3');
+
+INSERT INTO `AMIS` (`ID_USER`, `ID_AMI`) VALUES ('3','1');
+
+INSERT INTO `TRANSACTIONS` (`ID_TRANSACTION`, `etat`, `date_ouverture`, `date_fermeture`, `montant`, `id_paye`, `id_recoit`, `commentaire`) VALUES ('1', '1', '2020-04-02', NULL, '2400', '2', '3', 'Tacos');
+
+INSERT INTO `TRANSACTIONS` (`ID_TRANSACTION`, `etat`, `date_ouverture`, `date_fermeture`, `montant`, `id_paye`, `id_recoit`, `commentaire`) VALUES ('2', '1', '2020-04-03', NULL, '700', '1', '2', 'Kebab');
+
+
+
+
+
